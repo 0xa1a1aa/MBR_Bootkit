@@ -58,7 +58,7 @@ The first instruction `jmp short 0x7c47` is a jump to the address 0x7c47. Howeve
 Address 0x7c47 is in the middle of the disassembled instruction at address 0x7c46 (byte 31).
 Because NASM didn't know that the bytes after the very first instruction are data (our quote) and not actual code, it did disassemble the data bytes as code and thats why the rest of the following bytes were also disassembled incorrectly.
 
-2. Lets open the man page of **ndisasm** (man ndisasm) and check whether we can skip the first 0x47 bytes, including the data bytes, and disassemble the main section that comes after that.
+2. Lets open the man page of **ndisasm** (*man ndisasm*) and check whether we can skip the first 0x47 bytes, including the data bytes, and disassemble the main section that comes after that.
 
 In the manual we can find the following entry: 
 *-e hdrlen

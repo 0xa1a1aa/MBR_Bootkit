@@ -1,0 +1,1 @@
+https://en.wikipedia.org/wiki/X86#Addressing_modes

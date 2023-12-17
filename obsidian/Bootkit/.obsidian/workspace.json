@@ -8,55 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1dc68eadc4d1ac49",
+            "id": "e4223f31f7380612",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MBR from disk/Assembly.md",
+                "file": "Bootloader/Check compiled Bootloader.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8388ee544a5d2d3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory/Interrupt Vector Table (IVT).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cf6f9de4c84fba41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MBR from disk/Assembly.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b97fc58f3aa0a339",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MBR from disk/Assembly.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20192d3136092404",
+            "id": "0dc29d99caa063a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -68,19 +32,43 @@
             }
           },
           {
-            "id": "e4223f31f7380612",
+            "id": "5f81e94ea787e99d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bootloader/Check compiled Bootloader.md",
+                "file": "Theory/Far pointer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6d8359128c70ff7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/BIOS colors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e760d7ab7026a07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/BIOS colors.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bootloader/Check compiled Bootloader.md",
+                "file": "Theory/BIOS colors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bootloader/Check compiled Bootloader.md",
+                "file": "Theory/BIOS colors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bootloader/Check compiled Bootloader.md"
+                "file": "Theory/BIOS colors.md"
               }
             }
           }
@@ -207,15 +195,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4223f31f7380612",
+  "active": "6e760d7ab7026a07",
   "lastOpenFiles": [
+    "Theory/BIOS Video Mode.md",
+    "Theory/Interrupt Vector Table (IVT).md",
     "Bootloader/Bootloader.md",
+    "Theory/BIOS colors.md",
+    "Theory/NASM directives.md",
+    "Theory/Far pointer.md",
+    "Theory/Addressing modes.md",
+    "Bootloader/Check compiled Bootloader.md",
+    "Bootloader/Bootloader 1.md",
     "Bootloader/Makefile.md",
     "MBR from disk/Assembly.md",
-    "Bootloader/Check compiled Bootloader.md",
     "Bootloader",
-    "Theory/Interrupt Vector Table (IVT).md",
-    "Theory/Far pointer.md",
     "Theory",
     "MBR from disk"
   ]

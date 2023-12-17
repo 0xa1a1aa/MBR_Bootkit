@@ -1,3 +1,8 @@
+
+https://en.wikipedia.org/wiki/BIOS_interrupt_call#Interrupt_table
+
+https://stanislavs.org/helppc/int_table.html
+
 An Interrupt Vector Table (IVT) is a data structure in computer architecture that maps interrupt numbers to the addresses of their corresponding interrupt service routines (ISRs). It is commonly used in systems with interrupt-driven I/O to handle hardware and software interrupts.
 
 In x86 architecture, such as the Intel 8086/8088 and their successors, the IVT is a crucial part of the system. In the context of x86:

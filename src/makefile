@@ -1,7 +1,7 @@
 AS=nasm
 ASFLAGS=-f bin
 
-bootloader.bin: bootloader.s
+bootloader2.bin: bootloader2.s
 	$(AS) $(ASFLAGS) $< -o $@
 
 .PHONY: clean
