@@ -24,6 +24,6 @@ IVT Entry 20:  [SEG_20 OFFSET_20] ; ISR for interrupt 20
 IVT Entry 255: [SEG_255 OFFSET_255] ; ISR for interrupt 255
 ```
 
-During system startup or initialization, the operating system or BIOS sets up the IVT with the appropriate addresses of ISRs for different interrupts. When an interrupt occurs, the processor looks up the IVT to find the ISR and transfers control to that routine.
+During system startup or initialization, the operating system or **BIOS sets up the IVT** with the appropriate addresses of ISRs for different interrupts. When an interrupt occurs, the processor looks up the IVT to find the ISR and transfers control to that routine.
 
 The structure and usage of the IVT can vary across architectures, but the concept of mapping interrupts to their corresponding routines is common in many computer systems.
