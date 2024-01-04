@@ -8,103 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4223f31f7380612",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bootloader/Check compiled Bootloader.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0dc29d99caa063a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bootloader/Bootloader.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5f81e94ea787e99d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory/Far pointer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d8359128c70ff7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory/BIOS colors.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e760d7ab7026a07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory/Interrupt Vector Table (IVT).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f34759d65f1dda95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory/Interrupt Descriptor Table (IDT).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "65a67b2d7304c17b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theory/Far pointer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b88e28ebea091e23",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Theory/BIOS INT 13h.md",
+                "file": "Theory/BIOS INT 13h - Disk services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "77203b8b12516e57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/Multiboot specification.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Theory/BIOS INT 13h.md",
+                "file": "Theory/Multiboot specification.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Theory/BIOS INT 13h.md",
+                "file": "Theory/Multiboot specification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Theory/BIOS INT 13h.md"
+                "file": "Theory/Multiboot specification.md"
               }
             }
           }
@@ -233,6 +161,9 @@
   },
   "active": "bdb625ce32e6560e",
   "lastOpenFiles": [
+    "Theory/BIOS INT 13h - Disk services.md",
+    "Theory/Multiboot specification.md",
+    "Bootloader/Check compiled Bootloader.md",
     "Theory/Far pointer.md",
     "Theory/BIOS INT 13h.md",
     "Theory/BIOS Video Mode.md",
@@ -243,7 +174,6 @@
     "Theory/Interrupt Vector Table (IVT).md",
     "Theory/Interrupt Descriptor Table (IDT).md",
     "MBR from disk/Assembly.md",
-    "Bootloader/Check compiled Bootloader.md",
     "Bootloader/Bootloader.md",
     "Bootloader/Bootloader 1.md",
     "Bootloader/Makefile.md",
