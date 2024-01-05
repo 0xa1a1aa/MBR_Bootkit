@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c57a3c34a6435e78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bootloader/Simple Bootloader.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2e79a01ec1aeef88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bootloader/Simple Bootloader.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Theory/Multiboot specification.md",
+                "file": "Bootloader/Simple Bootloader.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Theory/Multiboot specification.md",
+                "file": "Bootloader/Simple Bootloader.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Theory/Multiboot specification.md"
+                "file": "Bootloader/Simple Bootloader.md"
               }
             }
           }
@@ -159,24 +183,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "77203b8b12516e57",
+  "active": "2e79a01ec1aeef88",
   "lastOpenFiles": [
-    "Theory/BIOS INT 13h - Disk services.md",
-    "Theory/Multiboot specification.md",
+    "Theory/Addressing modes.md",
+    "Theory/BIOS colors.md",
+    "Bootloader/Run Bootloader with QEMU.md",
+    "Bootloader/Simple Bootloader.md",
     "Bootloader/Check compiled Bootloader.md",
+    "Bootloader/Makefile.md",
+    "MBR from disk/Assembly.md",
+    "Theory/MBR Partition Table.md",
+    "Theory/Disk Address Packet (DAP).md",
+    "Theory/Multiboot specification.md",
+    "Theory/BIOS INT 13h - Disk services.md",
     "Theory/Far pointer.md",
     "Theory/BIOS INT 13h.md",
     "Theory/BIOS Video Mode.md",
-    "Theory/BIOS colors.md",
-    "Theory/Addressing modes.md",
     "Theory/NASM directives.md",
-    "Theory/MBR Partition Table.md",
     "Theory/Interrupt Vector Table (IVT).md",
     "Theory/Interrupt Descriptor Table (IDT).md",
-    "MBR from disk/Assembly.md",
-    "Bootloader/Bootloader.md",
     "Bootloader/Bootloader 1.md",
-    "Bootloader/Makefile.md",
     "Bootloader",
     "Theory",
     "MBR from disk"

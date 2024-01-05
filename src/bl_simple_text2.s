@@ -5,16 +5,16 @@ jmp main                             ; Jump over the data "section" (i.e. quote)
 
 quote db "Welcome to the real world. We're going to need guns... lots of guns.", 0
 quote_length equ $ - quote
-COLOR_GREEN_ON_BLACK equ 0x0A
+COLOR_YELLOW_ON_RED equ 0x4e
 
 main:
     ; Set background and foreground colour
-    mov ah, 0x06    ; Clear / scroll screen up function
-    xor al, al      ; Number of lines by which to scroll up (00h = clear entire window)
-    xor cx, cx      ; Row,column of window's upper left corner
-    mov dx, 0x184f  ; Row,column of window's lower right corner
-    mov bh, 0x4e    ; Background/foreground colour. In our case - red background / yellow foreground (https://en.wikipedia.org/wiki/BIOS_color_attributes)
-    int 0x10        ; Issue BIOS video services interrupt with function 0x06
+    mov ah, 0x06                    ; Clear / scroll screen up function
+    xor al, al                      ; Number of lines by which to scroll up (00h = clear entire window)
+    xor cx, cx                      ; Row,column of window's upper left corner
+    mov dx, 0x184f                  ; Row,column of window's lower right corner
+    mov bh, COLOR_YELLOW_ON_RED     ; Background/foreground colour. In our case - red background / yellow foreground (https://en.wikipedia.org/wiki/BIOS_color_attributes)
+    int 0x10                        ; Issue BIOS video services interrupt with function 0x06
 ​
 ; Move label's bootloaderBanner memory address to si
 mov si, quote
