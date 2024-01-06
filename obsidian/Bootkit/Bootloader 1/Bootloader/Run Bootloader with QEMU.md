@@ -19,3 +19,42 @@ Then run qemu with the drive (the MBR in the first 512 bytes will be executed fi
 ```SHELL
 qemu-system-i386 -drive file=disk.img,format=raw
 ```
+
+# Run bootloader and attach GDB
+
+Start bootloader:
+```SHELL
+qemu-system-i386 -s -S -drive file=disk.img,format=raw
+```
+**-s**: Start GDB server on standard port 1234.
+**-S**: Do not start CPU at startup. It will wait for a debugger to connect.
+
+Start GDB:
+```SHELL
+gdb
+```
+
+Then connect to the QEMU GDB server:
+```SHELL
+(gdb) target remote localhost:1234
+```
+
+Set breakpoint  @ 0x7c00
+Because of hardware virtualization, it may be necessary to use a hardware breakpoint:
+```SHELL
+(gdb) hbreak *0x7c00
+```
+
+To not always type in the above GDB commands store them in a file .gdbinit:
+```
+target remote localhost:1234
+hbreak *0x7c00
+```
+
+and just call GDB like this:
+```
+gdb -x .gdbinit
+```
+
+
+**GDB plugin** to make debugging more friendly: https://github.com/pwndbg/pwndbg
