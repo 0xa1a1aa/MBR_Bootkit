@@ -1,4 +1,6 @@
 
+https://wiki.osdev.org/Interrupt_Vector_Table
+
 https://en.wikipedia.org/wiki/BIOS_interrupt_call#Interrupt_table
 
 https://stanislavs.org/helppc/int_table.html
