@@ -4,7 +4,6 @@ ORG 0x7c00                           ; Set the origin address to 0x7c00. This is
 jmp start                            ; Jump over the "data section" (i.e. quote)
 
 quote db "Welcome to the real world. We're going to need guns... lots of guns.", 0
-quote_len EQU $ - quote
 COLOR_GREEN_ON_BLACK EQU 0x0a
 
 start:

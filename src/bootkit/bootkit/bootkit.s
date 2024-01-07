@@ -24,6 +24,10 @@ restore_orig_mbr:
     cld                              ; clear direction flag (move forward, used for next instruction)
     rep movsb                        ; copy byte from ds:si to es:di (cx times)
 
+; FOR TESTING START (remove after)
+jmp 0x0000:0x7c00                    ; jump to the loaded original MBR
+; FOR TESTING END
+
 ;
 ; Save the address of the original int 13 handler
 ;

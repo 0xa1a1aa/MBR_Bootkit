@@ -5,6 +5,8 @@ qemu-system-i386 -drive file=bootloader.bin,format=raw
 
 # Run the bootloader with additional disk content:
 
+## One disk
+
 First copy the MBR to the disk (first sector):
 ```SHELL
 dd if=bootloader.bin of=disk.img bs=512 count=1
@@ -19,6 +21,17 @@ Then run qemu with the drive (the MBR in the first 512 bytes will be executed fi
 ```SHELL
 qemu-system-i386 -drive file=disk.img,format=raw
 ```
+
+## Multiple disks
+
+Then run qemu with the MBR bootloader in one file and the disk in another:
+```SHELL
+qemu-system-i386 -drive file=bootloader.bin,format=raw -drive file=disk.img,format=raw
+```
+
+The BIOS stores the drive number in the register **dl**:
+- dl = 0x80 for bootloader.bin ?
+- dl = 0x81 for disk.img ?
 
 # Run bootloader and attach GDB
 
@@ -49,9 +62,11 @@ To not always type in the above GDB commands store them in a file .gdbinit:
 ```
 target remote localhost:1234
 hbreak *0x7c00
+continue
 ```
+(continue is needed to continue to the breakpoint @ 0x7c00, cause the execution is stalled by providing the **-S** flag)
 
-and just call GDB like this:
+Then just call GDB like so:
 ```
 gdb -x .gdbinit
 ```
