@@ -3,15 +3,19 @@
 
 #define TEST
 
+int TEST_save_orig_mbr_64();
+int save_orig_mbr_64();
+
+
 int main()
 {
 #ifdef TEST
-    int res = TEST_save_orig_mbr_64();
+    int err = TEST_save_orig_mbr_64();
 #else
-    int res = save_orig_mbr_64();
+    int err = save_orig_mbr_64();
 #endif
 
-    if (result == 0) {
+    if (err == 0) {
         printf("success\n");
     } else {
         fprintf(stderr, "error\n");
