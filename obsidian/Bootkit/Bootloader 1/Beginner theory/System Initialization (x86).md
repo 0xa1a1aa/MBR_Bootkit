@@ -1,0 +1,1 @@
+https://wiki.osdev.org/System_Initialization_(x86)

